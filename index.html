@@ -8,8 +8,16 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  	<script type="text/javascript">
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+				(window.jQuery || document.write('<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><\/script>'));
+		</script>
+		<![else]-->
+		<script type="text/javascript">
+				(window.jQuery || document.write('<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"><\/script>'));
+		</script>
+		<!--[endif]-->
+    
     <title>程序猿老黄历 by OWenT</title>
   </head>
 
@@ -44,7 +52,7 @@
   <iframe allowtransparency="true" scrolling="no" src="almanac.html" 
   id="ProgramerCalendarIframe" 
   style="width: 100%; min-height: 640px;margin: auto auto auto auto; border: none; overflow: hidden; background: transparent;"
-  onload="(function(){ var _t = document.getElementById('ProgramerCalendarIframe'); var _val = _t.contentWindow.document.documentElement.scrollHeight; _t.height =  _val; _t.style.minHeight = _t.style.height = _val; })();"
+  onload="(function(){ var _val = _t.contentWindow.document.documentElement.scrollHeight; $('#ProgramerCalendarIframe').css({ 'height': _val, 'min-height': _val }); })();"
   ></iframe></div>
 
 <p>Over.</p>
