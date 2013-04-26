@@ -52,7 +52,7 @@
   <iframe allowtransparency="true" scrolling="no" src="almanac.html" 
   id="ProgramerCalendarIframe" 
   style="width: 100%; min-height: 640px;margin: auto auto auto auto; border: none; overflow: hidden; background: transparent;"
-  onload="(function(){ var _val = _t.contentWindow.document.documentElement.scrollHeight; $('#ProgramerCalendarIframe').css({ 'height': _val, 'min-height': _val }); })();"
+  onload="(function(){ var _t =  $('#ProgramerCalendarIframe'); var _cdoc = _t.get(0).contentWindow? _t.get(0).contentWindow.document: _t.get(0).contentDocument; var _val = _cdoc.documentElement.scrollHeight; _t.css({ 'height': _val, 'min-height': _val }); })();"
   ></iframe></div>
 
 <p>Over.</p>
