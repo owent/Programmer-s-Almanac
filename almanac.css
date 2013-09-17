@@ -46,7 +46,6 @@ body {
 .good .title, .bad .title {
 	float: left;
 	width: 100px;
-	width: 100%;
 	font-weight: bold;
 	text-align: center;
 	font-size: 180%;
