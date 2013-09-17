@@ -45,7 +45,7 @@ body {
 
 .good .title, .bad .title {
 	float: left;
-	max-width: 100px;
+	width: 100px;
 	width: 100%;
 	font-weight: bold;
 	text-align: center;
@@ -72,7 +72,7 @@ body {
 }
 
 .good .content, .bad .content {
-	margin-left: 35%;
+	margin-left: 108px;
 	padding-right: 3%;
 	padding-top: 1px;
 	font-size: 150%;
