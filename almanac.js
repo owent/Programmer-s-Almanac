@@ -191,19 +191,19 @@ function parse(event) {
 
 // 添加到“宜”
 function addToGood(event) {
-	$('.good .content ul').append('<li><div class="name">' + event.name + '</div><div class="description">' + event.good + '</div></li>');
+	jQuery('.good .content ul').append('<li><div class="name">' + event.name + '</div><div class="description">' + event.good + '</div></li>');
 }
 
 // 添加到“不宜”
 function addToBad(event) {
-	$('.bad .content ul').append('<li><div class="name">' + event.name + '</div><div class="description">' + event.bad + '</div></li>');
+	jQuery('.bad .content ul').append('<li><div class="name">' + event.name + '</div><div class="description">' + event.bad + '</div></li>');
 }
 
-$(function () {
-	$('.date').html(getTodayString());
-	$('.direction_value').html(directions[random(iday, 2) % directions.length]);
-	$('.drink_value').html(pickRandom(drinks, 2).join());
-	$('.goddes_value').html(star(random(iday, 6) % 5 + 1));
+jQuery(document.body).ready(function () {
+	jQuery('.date').html(getTodayString());
+	jQuery('.direction_value').html(directions[random(iday, 2) % directions.length]);
+	jQuery('.drink_value').html(pickRandom(drinks, 2).join());
+	jQuery('.goddes_value').html(star(random(iday, 6) % 5 + 1));
 	pickTodaysLuck();
 });
 
